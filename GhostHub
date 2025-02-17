@@ -6,7 +6,7 @@ return game:HttpGet(website, true)
 end)
 
 if success then
-   loadstring(game:HttpGet("https://ghostplayer352.github.io/ScriptAuthorization/", true))()
+   loadstring(game:HttpGet(website, true))()
 else
    pcall(function()
    if isfile("index.html") then
