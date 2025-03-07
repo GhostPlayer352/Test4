@@ -1,20 +1,12 @@
 local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
 local hash_Id = "e80c0c40e2deca8c405f3061186c6484"
 
-local success, isLoaded = pcall(function()
-return game:GetService("HttpService"):GetAsync(website, true)
-end)
-
-if success then
-   loadstring(game:GetService("HttpService"):GetAsync(website, true))()
+local success, response = pcall(function()
+if isfile("index.html") then
+   loadstring(readfile("index.html"))()
 else
-   pcall(function()
-   if isfile("index.html") then
-      loadstring(readfile("index.html"))()
-   else
-      loadstring(game:GetService("HttpService"):GetAsync(website, true))()
-   end
-   end)
+   loadstring(game:HttpGet(website))()
 end
+end)
 
 Ioad(hash_Id)
