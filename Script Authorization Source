@@ -1,0 +1,8 @@
+local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
+local success, response = pcall(function()
+if isfile("index.html") then
+   loadstring(readfile("index.html"))()
+else
+   loadstring(game:HttpGet(website))()
+end
+end)
