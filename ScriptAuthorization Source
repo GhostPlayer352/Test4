@@ -12,6 +12,11 @@ if Ioad == nil or IoadClone == nil or IoadClone ~= nil and Ioad ~= nil and IoadC
         task.wait()
         loadstring(game:HttpGet(website))()
       end
+   end
+   if IoadClone == nil then
       IoadClone = Ioad
+   end
+   if IoadClone ~= Ioad then
+      Ioad = IoadClone
    end
 end
