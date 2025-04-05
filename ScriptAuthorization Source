@@ -1,6 +1,6 @@
 local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
 
-if Ioad == nil and IoadClone == nil or IoadClone ~= nil and Ioad ~= nil and IoadClone ~= Ioad then
+if Ioad == nil or IoadClone == nil or IoadClone ~= nil and Ioad ~= nil and IoadClone ~= Ioad then
    if writefile and isfile("index.html") then
       loadstring(readfile("index.html"))()
    else
