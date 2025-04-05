@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/ScriptAuthorization%20Source")()Ioad("75ca7d5f2f5974cfed8ece96cf582dac")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/ScriptAuthorization%20Source"))()Ioad("75ca7d5f2f5974cfed8ece96cf582dac")
