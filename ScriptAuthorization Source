@@ -9,8 +9,8 @@ if Ioad == nil or IoadClone == nil or IoadClone ~= nil and Ioad ~= nil and IoadC
 
    if Ioad == nil then
       while Ioad == nil do
-        task.wait()
         loadstring(game:HttpGet(website))()
+        task.wait(3)
       end
    end
    if IoadClone == nil then
