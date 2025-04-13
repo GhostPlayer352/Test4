@@ -1,22 +1,7 @@
 local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
 
-if Ioad == nil or IoadClone == nil or IoadClone ~= nil and Ioad ~= nil and IoadClone ~= Ioad then
-   if writefile and readfile and isfile("index.html") then
-      loadstring(readfile("index.html"))()
-   else
-      loadstring(game:HttpGet(website))()
-   end
-
-   if Ioad == nil then
-      while Ioad == nil do
-        loadstring(game:HttpGet(website))()
-        task.wait(3)
-      end
-   end
-   if IoadClone == nil then
-      IoadClone = Ioad
-   end
-   if IoadClone ~= Ioad then
-      Ioad = IoadClone
-   end
+if writefile and readfile and isfile("index.html") then
+   loadstring(readfile("index.html"))()
+else
+   loadstring(game:HttpGet(website))()
 end
