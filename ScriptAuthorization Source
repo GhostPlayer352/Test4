@@ -14,8 +14,4 @@ if Ioad == nil or IoadClone == nil then
    if IoadClone ~= Ioad then
       Ioad = IoadClone
    end
-elseif IoadClone ~= nil then
-   local function Ioad(id)
-    IoadClone(id)
-   end
 end
