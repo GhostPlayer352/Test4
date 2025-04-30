@@ -20,7 +20,5 @@ if Ioad == nil or IoadClone == nil then
 end
 
 if Ioad ~= IoadClone then
-   if IoadClone ~= Ioad then
-      Ioad = IoadClone
-   end
+   Ioad = IoadClone
 end
