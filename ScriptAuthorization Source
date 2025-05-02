@@ -1,4 +1,4 @@
-local website = game:HttpGet("https://ghost352.neocities.org/ScriptAuthorization")
+local website = game:HttpGet("https://ghost352.neocities.org/ScriptAuthorization/")
 
 if Ioad == nil or IoadClone == nil then
    Ioad = nil
