@@ -1,28 +1,9 @@
-local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
+local website = game:HttpGet("https://ghost352.neocities.org/ScriptAuthorization")
 
 if Ioad == nil or IoadClone == nil then
    Ioad = nil
-   pcall(function()
-   loadstring(game:HttpGet(website))()
-   end)
-   if Ioad == nil then
-      if readfile and writefile and isfile then
-         if isfile("index.html") then
-            loadstring(readfile("index.html"))()
-         else
-            while Ioad == nil do
-              loadstring(game:HttpGet(website))()
-              task.wait()
-            end
-         end
-      else
-         while Ioad == nil do
-           loadstring(game:HttpGet(website))()
-           task.wait()
-         end
-      end
-   end
-   if IoadClone == nil then
+   loadstring(website:sub(website.find(website, "<!--") + 4, website.find(website, "<!--") + 4 + 265))()
+   if IoadClone == nil and Ioad ~= nil then
       IoadClone = Ioad
    end
 end
