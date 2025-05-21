@@ -2,7 +2,7 @@ local website = game:HttpGet("https://ghost352.neocities.org/ScriptsAuthorizatio
 
 if Ioad == nil or IoadClone == nil then
    Ioad = nil
-   loadstring(website:sub(website.find(website, "<!--") + 4, website.find(website, "<!--") + 4 + 222))()
+   loadstring(website)()
    if IoadClone == nil and Ioad ~= nil then
       IoadClone = Ioad
    end
